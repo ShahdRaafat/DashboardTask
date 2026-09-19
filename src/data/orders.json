@@ -1,0 +1,162 @@
+[
+  {
+    "id": "ORD-1001",
+    "customer": "Mona Adel",
+    "category": "Electronics",
+    "amount": 1250,
+    "status": "completed",
+    "date": "2026-04-03"
+  },
+  {
+    "id": "ORD-1002",
+    "customer": "Youssef Nabil",
+    "category": "Clothing",
+    "amount": 340,
+    "status": "pending",
+    "date": "2026-04-11"
+  },
+  {
+    "id": "ORD-1003",
+    "customer": "Hana Kamal",
+    "category": "Home & Kitchen",
+    "amount": 560,
+    "status": "completed",
+    "date": "2026-04-19"
+  },
+  {
+    "id": "ORD-1004",
+    "customer": "Omar Sami",
+    "category": "Electronics",
+    "amount": 2100,
+    "status": "cancelled",
+    "date": "2026-04-25"
+  },
+  {
+    "id": "ORD-1005",
+    "customer": "Laila Fathy",
+    "category": "Books",
+    "amount": 90,
+    "status": "completed",
+    "date": "2026-05-02"
+  },
+  {
+    "id": "ORD-1006",
+    "customer": "Karim Ezzat",
+    "category": "Clothing",
+    "amount": 415,
+    "status": "completed",
+    "date": "2026-05-08"
+  },
+  {
+    "id": "ORD-1007",
+    "customer": "Nour Hisham",
+    "category": "Home & Kitchen",
+    "amount": 780,
+    "status": "pending",
+    "date": "2026-05-14"
+  },
+  {
+    "id": "ORD-1008",
+    "customer": "Ziad Mostafa",
+    "category": "Electronics",
+    "amount": 1600,
+    "status": "completed",
+    "date": "2026-05-20"
+  },
+  {
+    "id": "ORD-1009",
+    "customer": "Salma Reda",
+    "category": "Books",
+    "amount": 150,
+    "status": "cancelled",
+    "date": "2026-05-27"
+  },
+  {
+    "id": "ORD-1010",
+    "customer": "Ahmed Tarek",
+    "category": "Clothing",
+    "amount": 260,
+    "status": "completed",
+    "date": "2026-06-01"
+  },
+  {
+    "id": "ORD-1011",
+    "customer": "Dina Wael",
+    "category": "Electronics",
+    "amount": 1980,
+    "status": "pending",
+    "date": "2026-06-07"
+  },
+  {
+    "id": "ORD-1012",
+    "customer": "Mahmoud Anwar",
+    "category": "Home & Kitchen",
+    "amount": 640,
+    "status": "completed",
+    "date": "2026-06-13"
+  },
+  {
+    "id": "ORD-1013",
+    "customer": "Rana Sherif",
+    "category": "Books",
+    "amount": 120,
+    "status": "completed",
+    "date": "2026-06-19"
+  },
+  {
+    "id": "ORD-1014",
+    "customer": "Tamer Hosny",
+    "category": "Clothing",
+    "amount": 380,
+    "status": "cancelled",
+    "date": "2026-06-25"
+  },
+  {
+    "id": "ORD-1015",
+    "customer": "Aya Gamal",
+    "category": "Electronics",
+    "amount": 2350,
+    "status": "completed",
+    "date": "2026-07-02"
+  },
+  {
+    "id": "ORD-1016",
+    "customer": "Fady Maged",
+    "category": "Home & Kitchen",
+    "amount": 510,
+    "status": "pending",
+    "date": "2026-07-09"
+  },
+  {
+    "id": "ORD-1017",
+    "customer": "Yara Emad",
+    "category": "Books",
+    "amount": 95,
+    "status": "completed",
+    "date": "2026-07-15"
+  },
+  {
+    "id": "ORD-1018",
+    "customer": "Sherif Adel",
+    "category": "Clothing",
+    "amount": 300,
+    "status": "completed",
+    "date": "2026-07-21"
+  },
+  {
+    "id": "ORD-1019",
+    "customer": "Nada Farouk",
+    "category": "Electronics",
+    "amount": 1740,
+    "status": "cancelled",
+    "date": "2026-07-28"
+  },
+  {
+    "id": "ORD-1020",
+    "customer": "Hossam Fawzy",
+    "category": "Home & Kitchen",
+    "amount": 690,
+    "status": "completed",
+    "date": "2026-08-03"
+  }
+]
