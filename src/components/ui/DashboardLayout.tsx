@@ -9,7 +9,6 @@ import Sidebar from "./Sidebar";
 
 function DashboardLayout({ children }: { children: ReactNode }) {
   const [isOpen, setIsOpen] = useState(false);
-
   return (
     <div className="flex min-h-screen">
       {/* Desktop Sidebar */}

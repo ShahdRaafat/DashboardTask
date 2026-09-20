@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "name": "Shahd Raafat",
+    "email": "shahd@example.com",
+    "passwordHash": "$2b$10$uJF9Jm7AhgQTgjY3WdYa5ue76g0HFoLjWOsF/ddqOZRAF4t0XC/o."
+  },
+  {
+    "id": "2",
+    "name": "Admin User",
+    "email": "admin@example.com",
+    "passwordHash": "$2b$10$WIDJuic9OqzuebIO2yughuaoo9vK6/7E/EOo3F7KzNcuoACSuQQg."
+  },
+  {
+    "id": "3",
+    "name": "Test Account",
+    "email": "test@example.com",
+    "passwordHash": "$2b$10$HvaehyOmMrr5/zc/H/.EFOV3lLuRyhIzeRDZ3LdexNoy4HFihYb2q"
+  }
+]
