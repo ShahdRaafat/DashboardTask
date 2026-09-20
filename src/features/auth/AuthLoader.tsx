@@ -1,3 +1,4 @@
+"use client";
 import { useAppDispatch } from "@/store/hooks";
 import { useEffect } from "react";
 import { fetchCurrentUser } from "./authSlice";

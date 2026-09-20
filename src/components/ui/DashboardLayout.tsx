@@ -1,11 +1,12 @@
 "use client";
 
 import { navItems } from "@/lib/NavItems";
-import { MenuIcon, X } from "lucide-react";
+import { X } from "lucide-react";
 import { ReactNode, useState } from "react";
 import Button from "./Button";
 import Logo from "./Logo";
 import Sidebar from "./Sidebar";
+import Header from "./Header";
 
 function DashboardLayout({ children }: { children: ReactNode }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,12 +42,7 @@ function DashboardLayout({ children }: { children: ReactNode }) {
       </aside>
 
       <div className="flex flex-1 flex-col">
-        <header className="flex items-center gap-3 border-b border-border bg-surface px-4 py-3 md:hidden">
-          <Button variant="ghost" onClick={() => setIsOpen(true)}>
-            <MenuIcon className="h-5 w-5" />
-          </Button>
-          <span className="text-lg font-semibold">Dashboard</span>
-        </header>
+        <Header onClickMenu={() => setIsOpen(true)} />
 
         <main className="flex-1 m-12 md:p-6">{children}</main>
       </div>
