@@ -1,5 +1,11 @@
 import DashboardLayout from "@/components/ui/DashboardLayout";
+import AuthLoader from "@/features/auth/AuthLoader";
 
 export default function Dashboard({ children }: { children: React.ReactNode }) {
-  return <DashboardLayout>{children}</DashboardLayout>;
+  return (
+    <>
+      {<AuthLoader />}
+      <DashboardLayout>{children}</DashboardLayout>
+    </>
+  );
 }

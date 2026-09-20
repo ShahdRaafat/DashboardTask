@@ -39,13 +39,24 @@ export const loginUser = createAsyncThunk(
   },
 );
 
+export const fetchCurrentUser = createAsyncThunk(
+  "auth/fetchCurrentUser",
+  async (_, { rejectWithValue }) => {
+    const res = await fetch("/api/auth/me");
+    const data = await res.json();
+
+    if (!res.ok) {
+      return rejectWithValue(data.error);
+    }
+
+    return data.user as AuthUser;
+  },
+);
+
 const authSlice = createSlice({
   name: "auth",
   initialState,
   reducers: {
-    setUser: (state, action: PayloadAction<AuthUser>) => {
-      state.user = action.payload;
-    },
     clearUser: (state) => {
       state.user = null;
     },
@@ -63,9 +74,15 @@ const authSlice = createSlice({
       .addCase(loginUser.rejected, (state, action) => {
         state.status = "failed";
         state.error = action.payload as string;
+      })
+      .addCase(fetchCurrentUser.fulfilled, (state, action) => {
+        state.user = action.payload;
+      })
+      .addCase(fetchCurrentUser.rejected, (state) => {
+        state.user = null;
       });
   },
 });
 
-export const { setUser, clearUser } = authSlice.actions;
+export const { clearUser } = authSlice.actions;
 export default authSlice.reducer;
