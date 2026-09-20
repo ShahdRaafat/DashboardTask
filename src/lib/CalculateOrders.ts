@@ -1,13 +1,5 @@
 import ordersData from "@/data/orders.json";
-export type OrderStatus = "completed" | "pending" | "cancelled";
-export type Order = {
-  id: string;
-  customer: string;
-  category: string;
-  amount: number;
-  status: OrderStatus;
-  date: string;
-};
+import { Order, OrderStatus } from "@/types/Order";
 
 const orders: Order[] = ordersData as Order[];
 

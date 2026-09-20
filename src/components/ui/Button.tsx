@@ -13,11 +13,11 @@ function Button({
   className,
 }: ButtonProps) {
   const base =
-    "inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors px-4 py-2";
+    "cursor-pointer inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors px-4 py-2";
   const variants = {
     primary: "bg-primary text-primary-foreground hover:bg-primary-hover",
     ghost:
-      "bg-transparent text-foreground hover:bg-surface border border-border",
+      "bg-transparent text-foreground hover:bg-primary/10 border border-border",
   };
   return (
     <button
