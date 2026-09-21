@@ -3,8 +3,6 @@ import users from "@/data/users.json";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
-const JWT_SECRET = process.env.JWT_SECRET || "sdjhjcbdcbjdhzbjdzh";
-
 type User = {
   id: string;
   name: string;
@@ -13,6 +11,14 @@ type User = {
 };
 
 export async function POST(request: NextRequest) {
+  const JWT_SECRET = process.env.JWT_SECRET as string;
+  if (!JWT_SECRET) {
+    return NextResponse.json(
+      { error: "Server misconfiguration: JWT_SECRET is not set" },
+      { status: 500 },
+    );
+  }
+
   const { email, password } = await request.json();
   const user = users.find((u: User) => u.email === email);
 
