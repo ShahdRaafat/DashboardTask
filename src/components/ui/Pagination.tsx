@@ -11,10 +11,7 @@ type PaginationProps = {
 function Pagination({ totalPages }: PaginationProps) {
   const dispatch = useAppDispatch();
   const { currentPage } = useAppSelector((state) => state.orders);
-  console.log("current page", currentPage);
 
-  const disabledPrev = currentPage === 1;
-  console.log("disabledPrev", disabledPrev);
   return (
     <div className="flex flex-wrap items-center justify-center gap-1 border-t border-border px-4 py-3">
       <Button

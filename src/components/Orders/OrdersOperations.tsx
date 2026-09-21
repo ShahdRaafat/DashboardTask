@@ -12,7 +12,6 @@ function OrdersOperations() {
   const { searchTerm, statusFilter, sortDirection } = useAppSelector(
     (state) => state.orders,
   );
-  console.log("sort direction", sortDirection);
   return (
     <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
       <Searchbar
