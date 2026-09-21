@@ -9,7 +9,7 @@ import SortDropdown from "../ui/SortDropdown";
 
 function OrdersOperations() {
   const dispatch = useAppDispatch();
-  const { searchTerm, statusFilter, sortBy, sortDirection } = useAppSelector(
+  const { searchTerm, statusFilter, sortDirection } = useAppSelector(
     (state) => state.orders,
   );
   console.log("sort direction", sortDirection);

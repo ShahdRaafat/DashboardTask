@@ -44,7 +44,7 @@ function DashboardLayout({ children }: { children: ReactNode }) {
       <div className="flex flex-1 flex-col">
         <Header onClickMenu={() => setIsOpen(true)} />
 
-        <main className="flex-1 m-12 md:p-6">{children}</main>
+        <main className="flex-1 m-6 ">{children}</main>
       </div>
     </div>
   );

@@ -62,3 +62,11 @@ export function getFinalOrders(operations: OrderOperations) {
 
   return paginate(result, operations.currentPage, operations.pageSize);
 }
+
+//for the export functionality
+export function getAllFilteredOrders(operations: OrderOperations) {
+  let result = filterByStatus(ordersData, operations.statusFilter);
+  result = searchOrders(result, operations.searchTerm);
+  result = sortOrders(result, operations.sortBy, operations.sortDirection);
+  return result;
+}
